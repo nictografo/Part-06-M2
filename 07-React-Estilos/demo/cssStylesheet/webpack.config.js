@@ -26,7 +26,10 @@ module.exports = {
             loader: "css-loader"
           }
         ]
-      }
+      },{
+        test: /\.gcss$/,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
 };
